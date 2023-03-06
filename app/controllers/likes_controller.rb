@@ -16,7 +16,7 @@ class LikesController < ApplicationController
     end
 
     def destroy
-        binding.pry
+        
         @current_user.likes.destroy(find_like)
         head :no_content
     end
